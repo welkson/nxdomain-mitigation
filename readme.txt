@@ -4,4 +4,4 @@ cat ~/Downloads/dns6.txt | grep -i "ifrn.edu.br): view external: rate limit drop
 
 direto no pfsense:
 cd /var/log
-zgrep "ifrn.edu.br): view external: rate limit drop response to" resolver* | cut -d ' ' -f17 | sort | uniq
+zgrep -i "ifrn.edu.br): view external: rate limit drop response to" resolver* | cut -d ' ' -f17 | sort | uniq
